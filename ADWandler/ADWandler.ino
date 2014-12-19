@@ -18,7 +18,7 @@ void loop() {  //Main
     {
       Serial.print("Befehl 1: Funktionsaufruf  mit Argument = ");
       Serial.print(arg);
-      Serial.println(mesure());
+      mesure();
     }
   }
 }
@@ -38,6 +38,7 @@ int mesure() { //Funktion
   
   time = endTime - startTime;
   Serial.println("Dauer: "+ time);
+  
   for(int i=0; i < arg; i++){
     Serial.println(messungen[i]);
   }
